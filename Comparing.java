@@ -6,11 +6,11 @@ import java.util.*;
 public class Comparing {
 	public static void main(String[] args) {
 		
-		ArrayList li = new ArrayList<User>();
+		ArrayList<User> li = new ArrayList<User>();
 		li.add(new User(1000,"BOM","EMP1"));
 		li.add(new User(1200,"DEL","EMP2"));
 		li.add(new User(1000,"BLR","EMP3"));
-			Collections.sort(li,new UserSortByName());
+		Collections.sort(li,new UserSortByName());
 
 			for (Object u:li) {
 				User user = (User)u;
